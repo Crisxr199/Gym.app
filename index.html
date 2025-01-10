@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <script src="login.js"></script>
+    <div class="boxlogin">
+        <form onsubmit="return false;"> <!-- Prevenir el envío del formulario -->
+            <p id="text1">Iniciar Sesion</p>
+            <div class="boxusuario">    
+                <label id="usuario">Usuario</label>
+                <input id="input1" type="text" placeholder="Escribe tu usuario">
+            </div>
+
+            <div class="boxusuario">    
+                <label id="usuario">Clave</label>
+                <input id="input2" type="password" placeholder="Ingrese el codigo">
+            </div>
+            
+            <button id="iniciarsesion" onclick="loguear()">Iniciar sesión</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción al Gimnasio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="form-container">
+        <div id="backbox">
+            <a class="back" href="login.html" target="_blank">
+                Cerrar Sesion
+            </a>
+        </div>
+        <h1>Inscripción al Gimnasio</h1>
+
+
+        <!-- Formulario -->
+        <div class="input-group">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" placeholder="Nombre">
+        </div>
+
+        <div class="input-group">
+            <label for="surname">Apellido:</label>
+            <input type="text" id="surname" placeholder="Apellido">
+        </div>
+
+        <div class="input-group">
+            <label for="idCard">Cédula:</label>
+            <input type="text" id="idCard" placeholder="Cédula">
+        </div>
+
+        <div class="input-group">
+            <label for="dob">Fecha de Inscripcion:</label>
+            <input type="date" id="dob">
+        </div>
+
+        <div class="input-group">
+            <label for="expiration">Expiración de Inscripción:</label>
+            <input type="date" id="expiration">
+        </div>
+        <div class="input-group">
+            <label for="photo">Cargar Foto:</label>
+            <input type="file" id="photo" accept="image/*" onchange="showFileName()">
+            <label for="photo" class="custom-file-upload">
+                <i class="fa fa-cloud-upload"></i> Subir Foto
+            </label>
+            <p id="file-name" class="file-name"></p>
+        </div>
+        
+        <button onclick="submitForm()">Registrar Inscripción</button>
+
+            <!-- Barra de búsqueda -->
+            <div class="search-group">
+                <input type="text" id="search" placeholder="Buscar inscripción..." oninput="filterRecords()">
+            </div>
+        
+
+        <!-- Div donde se almacenan las inscripciones -->
+        <div id="records-container" class="data-display">
+            <h2>Inscripciones Registradas</h2>
+        </div>
+
+    </div>
+
+
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
